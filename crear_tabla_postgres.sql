@@ -16,7 +16,7 @@ CREATE TABLE usuario
    correo varchar(100) not null,
    idRol bigint not null,
    idEstado bigint not null,
-   PRIMARY KEY (id)
+   PRIMARY KEY (id),
    CONSTRAINT usuario_usuario_key UNIQUE (usuario)
 );
 
