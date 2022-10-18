@@ -1,4 +1,8 @@
 insert into rol (id, nombre, principal, idestado) values (1, 'ADMINISTRADOR', true, 1);
+-- ------
+-- colocar en 2 la secuencia del rol
+ALTER SEQUENCE public.rol_id_seq RESTART 2;
+
 insert into usuario (nombre, usuario, clave, correo, idrol, idestado) 
 values ('Administrador', 'admin', '21232f297a57a5a743894a0e4a801fc3', '', 1, 1);
 
@@ -40,6 +44,8 @@ INSERT INTO parametro
 (id, nombre, valor, idEstado)
 VALUES(11, 'DESTINOMAIL_CA', 'jorge.ponce@idebsystems.com', 1);
 
+-- colocar la secuencia de parametros en el siguiente que corresponde
+ALTER SEQUENCE public.parametro_id_seq RESTART 11;
 
 
 insert into estado (id, nombre) values (1, 'ACTIVO');
