@@ -60,6 +60,8 @@ create table archivoxml(
 	CONSTRAINT archivoxml_autorizacion_key UNIQUE (autorizacion)
 );
 
+CREATE INDEX archivoxml_fechaemision_idx ON archivoxml (fechaemision);
+
 
 create table estado(
 	id BIGSERIAL NOT NULL,
