@@ -55,7 +55,7 @@ create table archivoxml(
 	nombreArchivoPdf varchar(100),
 	idUsuarioCarga bigint,
 	fechaCarga timestamp,
-	idProveedor bigint,
+	codigojdproveedor text,
 	PRIMARY KEY (id),
 	CONSTRAINT archivoxml_autorizacion_key UNIQUE (autorizacion)
 );
