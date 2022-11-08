@@ -17,7 +17,8 @@ CREATE TABLE usuario
    idRol bigint not null,
    idEstado bigint not null,
    PRIMARY KEY (id),
-   CONSTRAINT usuario_usuario_key UNIQUE (usuario)
+   CONSTRAINT usuario_usuario_key UNIQUE (usuario),
+   CONSTRAINT usuario_correo_key UNIQUE (correo),
 );
 
 CREATE TABLE menu
